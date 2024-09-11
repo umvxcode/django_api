@@ -2,7 +2,13 @@
 POST http://127.0.0.1:8000/login
 Content-Type: application/json
 
-{"username":"barnabas","password":"Pass1234"}
+{"action":"login","username":"andrelamma","password":"Pass1234"}
+
+###
+GET http://127.0.0.1:8000/umen
+Content-Type: application/json
+
+{}
 
 
 
@@ -11,7 +17,7 @@ Content-Type: application/json
 POST http://127.0.0.1:8000/signup
 Content-Type: application/json
 
-{"username":"barnabas","password":"Pass1234","email":"andregadja@gmail.com"}
+{"first_name":"Andre","last_name":"Lamma","username":"andrelamma","password":"Pass1234","email":"andregadja@gmail.com"}
 
 ###
 GET http://127.0.0.1:8000/test-token
@@ -19,3 +25,18 @@ Content-Type: application/json
 Authorization: Token a882cb225099866f4ab2cbd8d1abbf9047aa44ab
 
 {}
+
+###
+
+### Upload a file
+### Upload an image
+POST http://example.com/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="example.jpg"
+Content-Type: image/jpeg
+
+./path/to/your/image.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+

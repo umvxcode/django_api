@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-$ip=uzskcgjh1tb_6vzj=9=7%l%442ii9&4vim@s26g4(6am$1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'yourdomain.com',       # Your domain
@@ -70,11 +70,11 @@ WSGI_APPLICATION = 'apidjango.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'apidjango',
+        'NAME': 'bntt-sdm-python',
         'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3308',
+        'PASSWORD': 'Q3dxoE2YuSdCP7Tr',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
