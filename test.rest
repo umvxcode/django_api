@@ -1,0 +1,21 @@
+# request untuk login
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{"username":"barnabas","password":"Pass1234"}
+
+
+
+### request untuk signu
+
+POST http://127.0.0.1:8000/signup
+Content-Type: application/json
+
+{"username":"barnabas","password":"Pass1234","email":"andregadja@gmail.com"}
+
+###
+GET http://127.0.0.1:8000/test-token
+Content-Type: application/json
+Authorization: Token a882cb225099866f4ab2cbd8d1abbf9047aa44ab
+
+{}
